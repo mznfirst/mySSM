@@ -18,7 +18,7 @@
 <!--    <context:annotation-config/>-->
 
 <!--视图解析器配置-->
-    <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <!--<bean id="viewResolver1" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/signin/"/> &lt;!&ndash; 不加 ‘/’ 是相对路径 ，加 ‘/’ 是绝对路径&ndash;&gt;
         <property name="suffix" value=".jsp"/>
     </bean>-->
@@ -26,10 +26,17 @@
         <property name="prefix" value="/WEB-INF/pages/"/> <!-- 不加 ‘/’ 是相对路径 ，加 ‘/’ 是绝对路径-->
         <property name="suffix" value=".jsp"/>
     </bean>
+    <!--<bean id="viewResolver3" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/adminlte3/"/> &lt;!&ndash; 不加 ‘/’ 是相对路径 ，加 ‘/’ 是绝对路径&ndash;&gt;
+        <property name="suffix" value=".jsp"/>
+    </bean>-->
+
 
 <!--  过滤静态资源  -->
     <mvc:resources location="/bootstrap-lib/" mapping="/bootstrap-lib/**" />
     <mvc:resources location="/js/" mapping="/js/**" />
+    <mvc:resources mapping="/adminlte3/**" location="/adminlte3/"/>
+    <mvc:resources mapping="/ecside/**" location="/ecside/"/>
 <!--  开启注解  -->
     <mvc:annotation-driven/>
 <!--    <mvc:default-servlet-handler/>-->

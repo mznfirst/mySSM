@@ -20,4 +20,7 @@ public interface AccountDao {
 
     @Insert({"insert into user values(#{uuid},#{username},#{email},#{password})"})
     public void saveAccount(Account account);
+
+    @Select({"select * from user where email=#{email}"})
+    public Account findAccount(String email);
 }

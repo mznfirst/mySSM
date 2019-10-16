@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mySSM">
+    <output-path>$PROJECT_DIR$/out/artifacts/mySSM</output-path>
+    <root id="archive" name="mySSM.war" />
+  </artifact>
+</component>

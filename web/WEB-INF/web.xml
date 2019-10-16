@@ -53,4 +53,14 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+
+    <jsp-config>
+        <taglib>
+<!--            <taglib-uri>/WEB-INF/ecside.tld</taglib-uri>-->
+            <taglib-uri>Taglib</taglib-uri>
+            <taglib-location>/WEB-INF/tld/ecside.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+
 </web-app>

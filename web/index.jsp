@@ -18,6 +18,7 @@
   <a href="signin/index.jsp">登录</a>
   <a href="signin/register2.jsp">注册</a>
   <br>
-  <a href="${pageContext.request.contextPath}/account/findAll">findAll</a>
+  <a href="${pageContext.request.contextPath}/account/findAll">findAll</a> <br>
+  <a href="${pageContext.request.contextPath}/student/findAll">StudentfindAll</a>
   </body>
 </html>
