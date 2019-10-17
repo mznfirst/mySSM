@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" build-on-make="true" name="mySSM:war exploded">
-    <output-path>$PROJECT_DIR$/target/mySSH</output-path>
+    <output-path>$PROJECT_DIR$/target/mySSM</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="mySSM/web/Web" />
       <element id="directory" name="WEB-INF">

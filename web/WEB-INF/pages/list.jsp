@@ -19,6 +19,20 @@
 </head>
 <body>
 
+<div id="context-menu">
+    <ul class="dropdown-menu" role="menu" style="margin-top: 100px">
+        <li style="cursor: hand"><a href="#">动物</a>
+            <ul class="dropdown-menu" role="menu" style="margin-top: 100px">
+                <li style="cursor: hand"><a tabindex="-1" onclick=""><i class="defaultIcon"></i>♂</a></li>
+                <li style="cursor: hand"><a tabindex="-1" onclick=""><i class="defaultIcon"></i>小猪</a></li>
+                <li style="cursor: hand"><a tabindex="-1" onclick=""><i class="defaultIcon"></i>小狗</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+
 
 
     <table border=0 cellspacing=0 cellpadding="0" style="width: 50%">
@@ -35,8 +49,14 @@
                 >
 <%--                <ec:table items="studentList" var="student" rowsDisplayed="30">--%>
                     <ec:row recordKey="${student.student_number}">
-                        <ec:column width="20" title="&#160" property="mycheckBox" cell="checkbox" resizeColWidth="false"></ec:column>
-                        <ec:column property="_1" width="30" title="序号" sortable="false" resizeColWidth="true"></ec:column>
+                        <ec:column width="20" title="&#160" property="mycheckBox" cell="checkbox" resizeColWidth="false">
+
+                        </ec:column>
+                        <ec:column property="_1" width="30" title="序号" sortable="false" resizeColWidth="true">
+                            <%
+                                out.write("<i style='margin-top:3px'/>");
+                            %>
+                        </ec:column>
                         <ec:column property="student_number" width="120" title="学号"  style="text-align:center"></ec:column>
                         <ec:column property="student_name" width="80" title="姓名"  style="text-align:center"></ec:column>
                     </ec:row>
